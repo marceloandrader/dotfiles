@@ -1,0 +1,8 @@
+[main]
+smart_completion = True
+log_file = ~/.mycli.log
+timing = True
+syntax_style = vim
+prompt = '\t \u@\h:\d> '
+keyword_casing = upper
+table_format = simple
