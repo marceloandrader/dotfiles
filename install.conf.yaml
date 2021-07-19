@@ -12,6 +12,7 @@
         ~/.gitignore: git/gitignore
         ~/.gitconfig: git/gitconfig
         ~/.myclirc: mycli/myclirc
+        ~/.local/share/nvim: nvim
 
 - shell:
         - chsh -s $(which fish)
