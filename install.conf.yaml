@@ -1,0 +1,17 @@
+- defaults:
+        link:
+                relink: true
+
+- clean: ['~']
+
+- link:
+        ~/.tmux.conf: tmux/tmux.conf
+        ~/.tool-versions: asdf/.tool-versions
+        ~/bin/remote: functions/remote
+        ~/.config/fish: fish
+        ~/.gitignore: git/gitignore
+        ~/.gitconfig: git/gitconfig
+
+- shell:
+        - chsh -s $(which fish)
+        - [git submodule update --init --recursive, Installing submodules]

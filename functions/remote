@@ -1,0 +1,155 @@
+#!/bin/bash
+#
+#Source any current environment variables for application
+source $HOME/.config/remote/environment
+
+#Store all remote information into variable
+remote_info="$(pass show ${1/.gpg/})"
+eval "$remote_info"
+
+if [ -n "$identity" ]; then
+	identity_info="$(pass show identities/$identity)"
+fi
+
+#Source all information from variable
+eval "$remote_info"
+eval "$identity_info"
+
+for arg; do
+	if [ "$arg" == "-v" ]; then
+		verbose="$arg"
+	fi
+	if [ "$arg" == "-e" ]; then
+		keepinterm="$arg"
+	fi
+	if [ "$arg" == "-f" ]; then
+		fullscreen="$arg"
+	fi
+	if [ "$arg" == "-i" ]; then
+		internal="$arg"
+	fi
+done
+
+func_rdp() {
+	CREDENTIALS=""
+	if [ -n "$username" ]; then
+		CREDENTIALS="$CREDENTIALS /u:$username"
+	fi
+	if [ -n "$domain" ]; then
+		CREDENTIALS="$CREDENTIALS /d:$domain"
+	fi
+	if [ -n "$password" ]; then
+		CREDENTIALS="$CREDENTIALS /p:\"$password\""
+	fi
+
+	if [ -n "$admin" ]; then
+		FREERDP_PARAMS="$FREERDP_PARAMS /admin"
+	fi
+
+	if [ "$fullscreen" == "-f" ]; then
+		FREERDP_PARAMS="$FREERDP_PARAMS /f"
+	fi
+
+	command="xfreerdp $FREERDP_PARAMS /w:$FREERDP_WIDTH /h:$FREERDP_HEIGHT $CREDENTIALS /v:$host"
+	if [ -n "$verbose" ]; then
+		echo $command
+	fi
+	eval $command
+}
+
+func_ssh() {
+	EXTRA_PARAMS=""
+	if [ -n "$key" ]; then
+		EXTRA_PARAMS="-i $REMOTE_KEYPATH/$key"
+	fi
+
+	if [ -n "$port" ]; then
+		EXTRA_PARAMS="$EXTRA_PARAMS -p $port"
+	fi
+
+	if [ -n "$password" ]; then
+		eval "spawn ssh $username@$host -p $port"
+		expect "password:"
+		send "$password\n"
+		interact
+		return
+	fi
+
+	ip=$host
+	if [ "$internal" == "-i" ]; then
+		ip=$internalhost
+	fi
+
+	command="ssh $EXTRA_PARAMS $username@$ip"
+
+	if [ "$keepinterm" == "-e" ]; then
+		command="termite -e \"$command\""
+	fi
+
+	if [ -n "$verbose" ]; then
+		echo $command
+	fi
+	eval $command
+}
+
+func_mysql() {
+	sed -i "s/PASSWORD_R/$password/g" ~/.my.cnf
+	command="mysql -u $username -h $host --database=$database -AE"
+
+	if [ "$keepinterm" == "-e" ]; then
+		command="termite -e \"$command\""
+	fi
+
+	if [ -n "$verbose" ]; then
+		echo $command
+	fi
+
+	eval $command
+	sed -i "s/password=.*/password=PASSWORD_R/g" ~/.my.cnf
+}
+
+func_mycli() {
+	command="mycli -h $host -u $username -p '$(pass show $password_entry | head -n 1)' $database"
+
+	if [ "$keepinterm" == "-e" ]; then
+		command="termite -e \"$command\""
+	fi
+
+	if [ -n "$verbose" ]; then
+		echo $command
+	fi
+
+	eval $command
+}
+
+func_vnc() {
+	vncviewer $Host:$Port
+}
+
+func_spicy() {
+	spicy -h $Host -p $Port
+}
+
+if [ "$type" == "rdp" ]; then
+	func_rdp
+fi
+
+if [ "$type" == "ssh" ]; then
+	func_ssh
+fi
+
+if [ "$type" == "vnc" ]; then
+	func_vnc
+fi
+
+if [ "$type" == "spice" ]; then
+	func_spicy
+fi
+
+if [ "$type" == "mysql" ]; then
+	func_mysql
+fi
+
+if [ "$type" == "mycli" ]; then
+	func_mycli
+fi

@@ -1,0 +1,1 @@
+/home/marcelo/.fzf/shell/key-bindings.fish
