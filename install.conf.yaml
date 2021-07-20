@@ -14,6 +14,11 @@
         ~/.myclirc: mycli/myclirc
         ~/.local/share/nvim: nvim
 
+- create:
+        - ~/.local/share/nvim/backup
+        - ~/.local/share/nvim/_temp
+        - ~/.local/share/nvim/_undo
+
 - shell:
         - chsh -s $(which fish)
         - [git submodule update --init --recursive, Installing submodules]
