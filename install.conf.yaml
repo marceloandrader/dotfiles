@@ -16,6 +16,7 @@
 
 - create:
         - ~/.local/share/nvim/backup
+        - ~/.local/share/nvim/_backup
         - ~/.local/share/nvim/_temp
         - ~/.local/share/nvim/_undo
 

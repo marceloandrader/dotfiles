@@ -7,7 +7,6 @@ SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_com:docker\x2dcompose\x20exec\x20php\x20composer
 SETUVAR _fish_abbr_d:df\x20\x2dhT\x20\x7c\x20grep\x20\x2dv\x20snap
 SETUVAR _fish_abbr_dc:docker\x2dcompose
-SETUVAR _fish_abbr_emed:nvim\x20\x2du\x20\x24HOME/\x2edotfiles/nvim/ember\x2evim
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gd:git\x20diff
@@ -22,6 +21,7 @@ SETUVAR _fish_abbr_s:yarn\x20start
 SETUVAR _fish_abbr_update_2D_nvim:asdf\x20uninstall\x20neovim\x20nightly\x20\x26\x26\x20asdf\x20install\x20neovim\x20nightly
 SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_viall:nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
+SETUVAR _fish_abbr_viember:nvim\x20\x2du\x20\x24HOME/\x2edotfiles/nvim/ember\x2evim
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99

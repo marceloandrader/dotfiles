@@ -73,9 +73,9 @@ call plug#end()
 " Someday coc-ember will be in this list
 "  - auto updates
 "  - in Plug, updates are all manual
-"  \ 'coc-actions',
-"  \ 'coc-tsserver',
 let g:coc_global_extensions = [
+  \ 'coc-actions',
+  \ 'coc-tsserver',
   \ 'coc-css',
   \ 'coc-json',
   \ 'coc-html',
@@ -224,6 +224,10 @@ nmap <leader>rn <Plug>(coc-rename)
 " Remap for format selected region
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
+
+"" My own shortcuts
+nmap <silent> <c-p> :GFiles<cr>
+nmap <silent> <c-b> :Buffers<cr>
 
 "" Suggestion UX
 "" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#improve-completion-experience

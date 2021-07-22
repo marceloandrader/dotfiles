@@ -3,6 +3,7 @@ set -gx TERM screen-256color
 starship init fish | source
 complete -c remote -a "(fd  . ~/.password-store/ | sed 's/\/home\/marcelo\/\.password-store\///g' | sed 's/\.gpg//g')"
 source ~/.asdf/asdf.fish
+eval (dircolors ~/.dir_colors/dircolors | head -n 1 | sed 's/^LS_COLORS=/set -x LS_COLORS /;s/;$//')
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
