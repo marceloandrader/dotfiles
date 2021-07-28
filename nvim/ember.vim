@@ -9,6 +9,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
   " Syntax / Theme
   Plug 'joshdick/onedark.vim'
+  Plug 'dracula/vim'
 
   " Highlighting and language support
   Plug 'leafgarland/typescript-vim'
@@ -97,9 +98,9 @@ set termguicolors
 """""""""""""""""""""""""
 " UI / Aesthetics
 """""""""""""""""""""""""
-set background=dark
-colorscheme onedark
-let g:airline_theme='onedark'
+" set background=dark
+colorscheme dracula
+" let g:airline_theme='onedark'
 
 """""""""""""""""""""""""
 " Editor
@@ -115,7 +116,7 @@ set showmode         " show the current mode (Insert, Visual...)
 set laststatus=2     " Always display status line
 
 set cursorline       " highlight current line
-set cursorcolumn     " highlight the current columnm
+" set cursorcolumn     " highlight the current columnm
 
 set ruler            " show current position
 
