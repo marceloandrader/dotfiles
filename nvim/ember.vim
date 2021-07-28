@@ -206,8 +206,8 @@ call EnableTemplateLiteralColors()
 " everything from here below is optional and is just suggestion.
 
 " Personal hotkey preferences to make testing easier.
-let mapleader = "\'"
-let maplocalleader = "\'"
+let mapleader = "\ "
+let maplocalleader = "\ "
 
 "" Hot Keys
 nnoremap <silent> <space>c :<C-u>CocList commands<cr>
@@ -229,6 +229,9 @@ nmap <leader>f <Plug>(coc-format-selected)
 "" My own shortcuts
 nmap <silent> <c-p> :GFiles<cr>
 nmap <silent> <c-b> :Buffers<cr>
+nmap <silent> <leader>fo :NERDTreeFind<cr>
+nmap <silent> <leader>t :NERDTreeToggle<cr>
+nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<rc>
 
 "" Suggestion UX
 "" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#improve-completion-experience
