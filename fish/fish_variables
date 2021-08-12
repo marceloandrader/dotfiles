@@ -7,6 +7,7 @@ SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_com:docker\x2dcompose\x20exec\x20php\x20composer
 SETUVAR _fish_abbr_d:df\x20\x2dhT\x20\x7c\x20grep\x20\x2dv\x20snap
 SETUVAR _fish_abbr_dc:docker\x2dcompose
+SETUVAR _fish_abbr_dcb:docker\x2dcompose\x20exec\x20php\x20bash
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gd:git\x20diff
@@ -19,7 +20,11 @@ SETUVAR _fish_abbr_gs:git\x20st
 SETUVAR _fish_abbr_ll:exa\x20\x2dl\x20\x2ds\x20modified
 SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_s:yarn\x20start
-SETUVAR _fish_abbr_update_2D_nvim:asdf\x20uninstall\x20neovim\x20nightly\x20\x26\x26\x20asdf\x20install\x20neovim\x20nightly
+SETUVAR _fish_abbr_s1:yarn\x20\x2d\x2dcwd\x20tm\x2dadmin\x20start
+SETUVAR _fish_abbr_s2:yarn\x20\x2d\x2dcwd\x20tm\x2dportal\x20start
+SETUVAR _fish_abbr_s3:yarn\x20\x2d\x2dcwd\x20js\x2dadmin\x20start
+SETUVAR _fish_abbr_s4:yarn\x20\x2d\x2dcwd\x20js\x2dportal\x20start
+SETUVAR _fish_abbr_s5:yarn\x20\x2d\x2dcwd\x20sc\x2dportal\x20start
 SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_viall:nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_viember:nvim\x20\x2du\x20\x24HOME/\x2edotfiles/nvim/ember\x2evim

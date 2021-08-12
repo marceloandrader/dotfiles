@@ -20,6 +20,11 @@ call plug#begin('~/.local/share/nvim/plugged')
   " CoC / Intellisense
   Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
   Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'preservim/nerdcommenter'
+  Plug 'godlygeek/tabular'
+  Plug 'tpope/vim-surround'
+  Plug 'mattn/emmet-vim'
+  Plug 'jiangmiao/auto-pairs'
 
   " Finding
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -231,7 +236,7 @@ nmap <silent> <c-p> :GFiles<cr>
 nmap <silent> <c-b> :Buffers<cr>
 nmap <silent> <leader>fo :NERDTreeFind<cr>
 nmap <silent> <leader>t :NERDTreeToggle<cr>
-nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<rc>
+nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<cr>
 
 "" Suggestion UX
 "" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#improve-completion-experience

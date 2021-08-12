@@ -31,6 +31,11 @@
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta     
 [diff]
 		tool = meld
 #	noprefix = true

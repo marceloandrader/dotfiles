@@ -14,6 +14,7 @@
         ~/.myclirc: mycli/myclirc
         ~/.local/share/nvim: nvim
         ~/.config/nvim/init.vim: nvim/init.vim
+        ~/.vimrc: nvim/init.vim
 
 - create:
         - ~/.local/share/nvim/backup
