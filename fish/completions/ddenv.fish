@@ -1,0 +1,1 @@
+complete --command ddenv --no-files --arguments "(env _DDENV_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=get-args _TYPER_COMPLETE_ARGS=(commandline -cp) ddenv)" --condition "env _DDENV_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=is-args _TYPER_COMPLETE_ARGS=(commandline -cp) ddenv"

@@ -109,7 +109,7 @@ func_mysql() {
 }
 
 func_mycli() {
-	command="mycli -h $host -u $username -p '$(pass show $password_entry | head -n 1)' $database"
+	command="mycli --local-infile=true -h $host -u $username -p '$(pass show $password_entry | head -n 1)' $database"
 
 	if [ "$keepinterm" == "-e" ]; then
 		command="termite -e \"$command\""

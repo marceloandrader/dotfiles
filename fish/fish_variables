@@ -28,6 +28,7 @@ SETUVAR _fish_abbr_s5:yarn\x20\x2d\x2dcwd\x20sc\x2dportal\x20start
 SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_viall:nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_viember:nvim\x20\x2du\x20\x24HOME/\x2edotfiles/nvim/ember\x2evim
+SETUVAR _fish_abbr_xd:\x2dH\x20\x27Cookie\x3a\x20XDEBUG_SESSION\x3dPHPSTORM\x27
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99

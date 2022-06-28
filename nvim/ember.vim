@@ -19,7 +19,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " CoC / Intellisense
   Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
+"  Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
   Plug 'preservim/nerdcommenter'
   Plug 'godlygeek/tabular'
   Plug 'tpope/vim-surround'
@@ -70,7 +70,16 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Snippets
   Plug 'honza/vim-snippets'
 
-call plug#end()
+  " AI
+  Plug 'github/copilot.vim'
+
+  " Git
+  Plug 'tpope/vim-fugitive'
+
+  " Elixir
+  Plug 'elixir-editors/vim-elixir'
+
+  call plug#end()
 
 """"""""""""""""""""""
 " CoC configuration
@@ -81,19 +90,18 @@ call plug#end()
 "  - in Plug, updates are all manual
 let g:coc_global_extensions = [
   \ 'coc-actions',
-  \ 'coc-tsserver',
   \ 'coc-css',
   \ 'coc-json',
   \ 'coc-html',
   \ 'coc-vimlsp',
   \ 'coc-highlight',
-  \ 'coc-ember',
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-snippets',
 \ ]
 
-
+"  \ 'coc-ember',
+"  \ 'coc-tsserver',
 
 
 
