@@ -120,7 +120,7 @@ colorscheme dracula
 """""""""""""""""""""""""
 syntax on
 set encoding=utf-8
-set guifont=DejaVu\ Sans\ Mono
+set guifont=Inconsolata\ for\ Powerline:12
 
 set cmdheight=1      " under statusline messages
 
@@ -153,7 +153,7 @@ set hlsearch  " highlight search terms
 set list      " show whitespace
 
 " set whitespace chars
-set listchars=eol:¬,tab:>·,extends:>,precedes:<,space:·
+" set listchars=eol:¬,tab:>·,extends:>,precedes:<,space:·
 
 set autoread   " Autoload reload files when they have changed on the disk
 
@@ -246,22 +246,4 @@ nmap <silent> <leader>fo :NERDTreeFind<cr>
 nmap <silent> <leader>t :NERDTreeToggle<cr>
 nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<cr>
 
-"" Suggestion UX
-"" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#improve-completion-experience
-"" Navigation
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" NOTE: using tab for this makes TAB not work as normal tab insersion...
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-" inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : coc#refresh()
-
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-"" Use enter to confirm completion
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-"" Close preview window when completion is done.
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"

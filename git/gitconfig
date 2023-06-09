@@ -38,6 +38,7 @@
     show = delta     
 [diff]
 		tool = meld
+    word-diff = porcelain
 #	noprefix = true
 [difftool]
         prompt = false
@@ -53,3 +54,7 @@
         default = simple
 [init]
 	defaultBranch = main
+[safe]
+	directory = /opt/tm2-api/vendor/igorsantos07/phalcon-queue-db
+[merge]
+	tool = meld

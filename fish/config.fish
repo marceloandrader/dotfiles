@@ -10,6 +10,12 @@ export PATH="/home/marcelo/.local/bin:$PATH"
 export PATH="/home/marcelo/bin/ddev:$PATH"
 export FLYCTL_INSTALL="/home/marcelo/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="/home/marcelo/.mix/escripts:$PATH"
+export PATH="/home/marcelo/.dotnet:/home/marcelo/.dotnet/tools:$PATH"
+export PATH="/home/marcelo/.local/share/bob/nvim-bin:$PATH"
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH="/home/marcelo/Code/ma/v/:$PATH"
+export PATH="./node_modules/.bin/:$PATH"
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`

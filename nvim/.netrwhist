@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/marcelo/Code/ma/hugo.revistagestion.ec/data'
+let g:netrw_dirhist_5='/home/marcelo/Code/ma/hugo.revistagestion.ec'
+let g:netrw_dirhist_4='/home/marcelo/Code/ma'
+let g:netrw_dirhist_3='/home/marcelo/Code/ma/hugo.revistagestion.ec'
 let g:netrw_dirhist_2='/home/marcelo/Code/ma/lamdera/src'
 let g:netrw_dirhist_1='/home/marcelo/Code/ma/lamdera'
