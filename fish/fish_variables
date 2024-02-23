@@ -1,9 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_all:\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_c:cd\x20\x7e/Code/
 SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_cdk:npx\x20aws\x2dcdk
 SETUVAR _fish_abbr_com:docker\x2dcompose\x20exec\x20php\x20composer
 SETUVAR _fish_abbr_d:df\x20\x2dhT\x20\x7c\x20grep\x20\x2dv\x20snap
 SETUVAR _fish_abbr_dc:docker\x2dcompose
@@ -17,9 +18,12 @@ SETUVAR _fish_abbr_gbs:git\x20branch\x20\x2d\x2dsort\x3d\x2dcommitterdate
 SETUVAR _fish_abbr_gd:git\x20diff
 SETUVAR _fish_abbr_gdc:git\x20diff\x20\x2d\x2dcached
 SETUVAR _fish_abbr_gf:git\x20flow
+SETUVAR _fish_abbr_gfb:git\x20flow\x20bugfix
 SETUVAR _fish_abbr_gff:git\x20flow\x20feature
 SETUVAR _fish_abbr_gfh:git\x20flow\x20hotfix
+SETUVAR _fish_abbr_gfr:git\x20flow\x20release
 SETUVAR _fish_abbr_gl:git\x20pull\x20\x2d\x2dprune
+SETUVAR _fish_abbr_gli:npx\x20prettier\x20\x2d\x2dparser\x3dglimmer\x20\x2d\x2dwrite
 SETUVAR _fish_abbr_glog:git\x20log
 SETUVAR _fish_abbr_gp:git\x20push\x20origin\x20HEAD
 SETUVAR _fish_abbr_grt:cd\x20\x28git\x20rev\x2dparse\x20\x2d\x2dshow\x2dtoplevel\x20\x7c\x7c\x20echo\x20\x22\x2e\x22\x29
@@ -27,17 +31,18 @@ SETUVAR _fish_abbr_gs:git\x20st
 SETUVAR _fish_abbr_gw:git\x20switch
 SETUVAR _fish_abbr_ll:exa\x20\x2dl\x20\x2ds\x20modified
 SETUVAR _fish_abbr_ls:exa
+SETUVAR _fish_abbr_lts:asdf\x20shell\x20nodejs\x20lts
+SETUVAR _fish_abbr_n14:asdf\x20shell\x20nodejs\x2014\x2e18\x2e1
 SETUVAR _fish_abbr_rl:remote\x20Work/SmithCarson/db\x2dconnection\x2dlocal
 SETUVAR _fish_abbr_rp:remote\x20Work/SmithCarson/db\x2dconnection\x2dprod4
 SETUVAR _fish_abbr_rs:remote\x20Work/SmithCarson/db\x2dconnection\x2dstaging
 SETUVAR _fish_abbr_s:yarn\x20start
 SETUVAR _fish_abbr_s1:yarn\x20\x2d\x2dcwd\x20tm\x2dadmin\x20start
-SETUVAR _fish_abbr_s2:yarn\x20\x2d\x2dcwd\x20tm\x2dportal\x20start
+SETUVAR _fish_abbr_s2:yarn\x20\x2d\x2dcwd\x20sc\x2dportal\x20start
 SETUVAR _fish_abbr_s3:yarn\x20\x2d\x2dcwd\x20js\x2dadmin\x20start
 SETUVAR _fish_abbr_s4:yarn\x20\x2d\x2dcwd\x20js\x2dportal\x20start
-SETUVAR _fish_abbr_s5:yarn\x20\x2d\x2dcwd\x20sc\x2dportal\x20start
-SETUVAR _fish_abbr_vi:nvim
-SETUVAR _fish_abbr_viall:nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
+SETUVAR _fish_abbr_vi:asdf\x20shell\x20nodejs\x20lts\x3b\x20nvim
+SETUVAR _fish_abbr_viall:asdf\x20shell\x20nodejs\x20lts\x3b\x20nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_xd:\x2dH\x20\x27Cookie\x3a\x20XDEBUG_SESSION\x3dPHPSTORM\x27
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr

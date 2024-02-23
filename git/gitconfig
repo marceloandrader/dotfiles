@@ -17,7 +17,7 @@
         count   = !git shortlog -sn
         st = status -sb
         ci = commit
-		branchauthors = "! git-branch-authors"
+        branchauthors = "! git-branch-authors"
 [color]
         diff = auto
         status = auto
@@ -37,15 +37,15 @@
     reflog = delta
     show = delta     
 [diff]
-		tool = meld
+    tool = meld
     word-diff = porcelain
-#	noprefix = true
+    # noprefix = true
 [difftool]
-        prompt = false
+    prompt = false
 [difftool "meld"]
-		cmd = meld "$LOCAL" "$REMOTE"
+    cmd = meld "$LOCAL" "$REMOTE"
 [help]
-        autocorrect = 1
+    autocorrect = 1
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.

@@ -120,7 +120,7 @@ colorscheme dracula
 """""""""""""""""""""""""
 syntax on
 set encoding=utf-8
-set guifont=Inconsolata\ for\ Powerline:12
+set guifont=Inconsolata\ for\ Powerline:8
 
 set cmdheight=1      " under statusline messages
 
@@ -240,8 +240,8 @@ vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
 
 "" My own shortcuts
-nmap <silent> <c-p> :GFiles<cr>
-nmap <silent> <c-b> :Buffers<cr>
+nmap <silent> <leader>p :GFiles<cr>
+nmap <silent> <leader>b :Buffers<cr>
 nmap <silent> <leader>fo :NERDTreeFind<cr>
 nmap <silent> <leader>t :NERDTreeToggle<cr>
 nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<cr>
