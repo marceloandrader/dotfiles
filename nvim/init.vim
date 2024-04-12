@@ -1,3 +1,4 @@
+set shell=bash 
 " Basic editing configuration
 set nocompatible
 set hidden

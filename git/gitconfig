@@ -8,6 +8,9 @@
         email = marcelo.andrade.r@gmail.com
 [credential]
         helper = cache
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
 [alias]
         co = checkout
         cp = cherry-pick
@@ -27,6 +30,7 @@
         excludesfile = ~/.gitignore
         editor = nvim
         pager = less -r
+	fileMode = false
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -58,3 +62,5 @@
 	directory = /opt/tm2-api/vendor/igorsantos07/phalcon-queue-db
 [merge]
 	tool = meld
+[pull]
+	rebase = true
