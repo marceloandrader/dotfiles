@@ -40,6 +40,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " Linting
   Plug 'w0rp/ale'
+  let g:ale_enabled = 0
   let g:ale_sign_error = '✘'
   let g:ale_sign_warning = '⚠'
   let g:ale_linters = {
@@ -240,6 +241,7 @@ vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
 
 "" My own shortcuts
+nmap <silent> <leader>a :ALEToggle<cr>
 nmap <silent> <leader>p :GFiles<cr>
 nmap <silent> <leader>b :Buffers<cr>
 nmap <silent> <leader>fo :NERDTreeFind<cr>
