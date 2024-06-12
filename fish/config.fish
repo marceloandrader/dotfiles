@@ -17,6 +17,8 @@ export DOTNET_ROOT=$HOME/.dotnet
 export PATH="/home/marcelo/Code/ma/v/:$PATH"
 export PATH="./node_modules/.bin/:$PATH"
 export PATH="/home/marcelo/bin/PhpStorm-231.9161.47/bin:$PATH"
+export PATH="./vendor/bin:$PATH"
+export PATH="/home/marcelo/.config/composer/vendor/bin:$PATH"
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
