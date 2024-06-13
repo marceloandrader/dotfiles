@@ -1,27 +1,28 @@
 - defaults:
-        link:
-                relink: true
+    link:
+      relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-        ~/.tmux.conf: tmux/tmux.conf
-        ~/.tool-versions: asdf/.tool-versions
-        ~/bin/remote: functions/remote
-        ~/.config/fish: fish
-        ~/.gitignore: git/gitignore
-        ~/.gitconfig: git/gitconfig
-        ~/.myclirc: mycli/myclirc
-        ~/.local/share/nvim: nvim
-        ~/.config/nvim/init.vim: nvim/init.vim
-        ~/.vimrc: nvim/init.vim
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tool-versions: asdf/.tool-versions
+    ~/bin/remote: functions/remote
+    ~/.config/fish: fish
+    ~/.gitignore: git/gitignore
+    ~/.gitconfig: git/gitconfig
+    ~/.myclirc: mycli/myclirc
+    # ~/.local/share/nvim: nvim
+    # ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.vimrc: nvim/init.vim
+    ~/.config/starship.toml: starship/config.toml
 
 - create:
-        - ~/.local/share/nvim/backup
-        - ~/.local/share/nvim/_backup
-        - ~/.local/share/nvim/_temp
-        - ~/.local/share/nvim/_undo
+    - ~/.local/share/nvim/backup
+    - ~/.local/share/nvim/_backup
+    - ~/.local/share/nvim/_temp
+    - ~/.local/share/nvim/_undo
 
 - shell:
-        - chsh -s $(which fish)
-        - [git submodule update --init --recursive, Installing submodules]
+    - chsh -s $(which fish)
+    - [git submodule update --init --recursive, Installing submodules]
