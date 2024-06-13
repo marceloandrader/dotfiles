@@ -1,9 +1,9 @@
 add_newline = false
 
-right_format = """
+format = """
 [](#DA627D)\
+$time\
 (bg:#DA627D fg:#9A348E)\
-$directory\
 [](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
@@ -12,15 +12,18 @@ $elixir\
 $php\
 $nodejs\
 [](fg:#86BBD8 bg:#33658A)\
-$time\
+$directory\
 [ ](fg:#33658A)\
 """
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:#33658A"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
+
+[package]
+disabled = true
 
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
@@ -110,5 +113,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
+style = "bg:#DA627D"
 format = '[ ♥ $time ]($style)'
