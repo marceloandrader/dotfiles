@@ -14,6 +14,7 @@
     ~/.myclirc: mycli/myclirc
     # ~/.local/share/nvim: nvim
     # ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim: lazyvim
     ~/.vimrc: nvim/init.vim
     ~/.config/starship.toml: starship/config.toml
 
