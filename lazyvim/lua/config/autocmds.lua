@@ -4,7 +4,7 @@
 
 -- Disable autoformatting in hbs files
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "handlebars" },
+  pattern = { "handlebars", "javascript" },
   callback = function()
     vim.b.autoformat = false
   end,

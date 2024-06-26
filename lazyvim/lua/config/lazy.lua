@@ -45,3 +45,9 @@ require("lazy").setup({
     },
   },
 })
+
+require("conform").setup({
+  formatters_by_ft = {
+    python = { "black" },
+  },
+})

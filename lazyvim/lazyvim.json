@@ -10,7 +10,6 @@
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.php",
     "lazyvim.plugins.extras.lang.sql",
-    "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
@@ -19,3 +18,4 @@
   },
   "version": 6
 }
+
