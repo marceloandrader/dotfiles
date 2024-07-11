@@ -64,3 +64,5 @@
 	tool = meld
 [pull]
 	rebase = true
+[tag]
+	sort = -authordate

@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/marcelo/Code/sc-source/pdf-indexing/lambda/searchablePDF/app'
+let g:netrw_dirhist_7='/home/marcelo/Code/sc-source/pdf-indexing/lambda/searchablePDF'
 let g:netrw_dirhist_6='/home/marcelo/Code/ma/hugo.revistagestion.ec/data'
 let g:netrw_dirhist_5='/home/marcelo/Code/ma/hugo.revistagestion.ec'
 let g:netrw_dirhist_4='/home/marcelo/Code/ma'

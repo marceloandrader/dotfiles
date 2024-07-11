@@ -18,8 +18,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Quramy/vim-js-pretty-template'
 
   " CoC / Intellisense
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-"  Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
   Plug 'preservim/nerdcommenter'
   Plug 'godlygeek/tabular'
   Plug 'tpope/vim-surround'
@@ -29,15 +29,12 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Finding
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  Plug 'scrooloose/nerdtree'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
-
-  let NERDTreeShowHidden=1 " This also ignores .gitignore
-  let NERDTreeIgnore=['.git$[[dir]]', '.swp', 'dist', 'tmp', 'node_modules', 'bower_components', '.pnp']
-  let NERDTreeAutoDeleteBuffer = 1
-  let NERDTreeMinimalUI = 1
-  let NERDTreeDirArrows = 1
-
+  Plug 'nvim-neo-tree/neo-tree.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'MunifTanjim/nui.nvim'
+  Plug '3rd/image.nvim'
+  
   " Linting
   Plug 'w0rp/ale'
   let g:ale_enabled = 0
@@ -80,7 +77,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Elixir
   Plug 'elixir-editors/vim-elixir'
 
-  call plug#end()
+call plug#end()
 
 """"""""""""""""""""""
 " CoC configuration
@@ -212,7 +209,7 @@ function EnableTemplateLiteralColors()
   autocmd FileType typescript syn clear foldBraces
 endfunction
 
-call EnableTemplateLiteralColors()
+" call EnableTemplateLiteralColors()
 
 
 
@@ -244,8 +241,8 @@ nmap <leader>f <Plug>(coc-format-selected)
 nmap <silent> <leader>a :ALEToggle<cr>
 nmap <silent> <leader>p :GFiles<cr>
 nmap <silent> <leader>b :Buffers<cr>
-nmap <silent> <leader>fo :NERDTreeFind<cr>
-nmap <silent> <leader>t :NERDTreeToggle<cr>
+nmap <silent> <leader>fo :Neotree reveal<cr>
+nmap <silent> <leader>t :Neotree toggle<cr>
 nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<cr>
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
