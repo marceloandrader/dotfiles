@@ -41,13 +41,13 @@
     reflog = delta
     show = delta     
 [diff]
-    tool = meld
+    tool = nvimdiff
     word-diff = porcelain
     # noprefix = true
 [difftool]
     prompt = false
-[difftool "meld"]
-    cmd = meld "$LOCAL" "$REMOTE"
+[difftool "nvimdiff"]
+    cmd = nvim -d -O2 "$LOCAL" "$REMOTE"
 [help]
     autocorrect = 1
 [push]
@@ -61,7 +61,7 @@
 [safe]
 	directory = /opt/tm2-api/vendor/igorsantos07/phalcon-queue-db
 [merge]
-	tool = meld
+	tool = nvimdiff
 [pull]
 	rebase = true
 [tag]

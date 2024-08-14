@@ -246,3 +246,6 @@ nmap <silent> <leader>t :Neotree toggle<cr>
 nmap <silent> <leader>fb :!npx prettier --parser=glimmer --write %<cr>
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+let g:copilot_node_command = "~/.asdf/installs/nodejs/20.11.1/bin/node"
+let g:coc_node_path = "~/.asdf/installs/nodejs/20.11.1/bin/node"

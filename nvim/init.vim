@@ -7,6 +7,7 @@ set number
 set showtabline=2
 set autoread
 set updatetime=300
+set nowrap
 
 " Own shortcuts
 nmap <silent> <leader>bd :bd<cr>
