@@ -108,6 +108,20 @@ func_mysql() {
 	sed -i "s/password=.*/password=PASSWORD_R/g" ~/.my.cnf
 }
 
+func_psql() {
+  command="PGPASSWORD=$(pass show $password_entry) psql -U $username -h $host $database"
+
+	if [ "$keepinterm" == "-e" ]; then
+		command="termite -e \"$command\""
+	fi
+
+	if [ -n "$verbose" ]; then
+		echo $command
+	fi
+
+	eval $command
+}
+
 func_mycli() {
 	command="mycli --local-infile=true -h $host -u $username -p '$(pass show $password_entry | head -n 1)' $database"
 
@@ -152,4 +166,8 @@ fi
 
 if [ "$type" == "mycli" ]; then
 	func_mycli
+fi
+
+if [ "$type" == "psql" ]; then
+	func_psql
 fi
