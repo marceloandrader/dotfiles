@@ -16,6 +16,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'joukevandermaas/vim-ember-hbs'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'Quramy/vim-js-pretty-template'
+  Plug 'adalessa/laravel.nvim'
 
   " CoC / Intellisense
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
