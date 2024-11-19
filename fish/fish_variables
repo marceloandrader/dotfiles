@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_all:\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_c:cd\x20\x7e/Code/
 SETUVAR _fish_abbr_cat:bat

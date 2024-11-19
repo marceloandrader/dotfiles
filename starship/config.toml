@@ -39,7 +39,7 @@ disabled = true
 # "Important 󰈙 " = " 󰈙 "
 
 [php]
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:black"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
@@ -59,7 +59,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
+style = "bg:#FCA17D fg:black"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
@@ -92,7 +92,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
+style = "bg:#86BBD8 fg:black"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]

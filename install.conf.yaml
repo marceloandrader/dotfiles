@@ -5,8 +5,7 @@
 - clean: ["~"]
 
 - link:
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.tool-versions: asdf/.tool-versions
+    # ~/.tool-versions: asdf/.tool-versions
     ~/bin/remote: functions/remote
     ~/.config/fish: fish
     ~/.gitignore: git/gitignore
@@ -14,15 +13,15 @@
     ~/.myclirc: mycli/myclirc
     # ~/.local/share/nvim: nvim
     # ~/.config/nvim/init.vim: nvim/init.vim
-    ~/.config/nvim: lazyvim
-    ~/.vimrc: nvim/init.vim
+    # ~/.config/nvim: lazyvim
+    # ~/.vimrc: nvim/init.vim
     ~/.config/starship.toml: starship/config.toml
 
-- create:
-    - ~/.local/share/nvim/backup
-    - ~/.local/share/nvim/_backup
-    - ~/.local/share/nvim/_temp
-    - ~/.local/share/nvim/_undo
+# - create:
+#     - ~/.local/share/nvim/backup
+#     - ~/.local/share/nvim/_backup
+#     - ~/.local/share/nvim/_temp
+#     - ~/.local/share/nvim/_undo
 
 - shell:
     - chsh -s $(which fish)
