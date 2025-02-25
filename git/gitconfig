@@ -21,6 +21,9 @@
         st = status -sb
         ci = commit
         branchauthors = "! git-branch-authors"
+        dlog = -c diff.external=difftastic log --ext-diff
+        dshow = -c diff.external=difftastic show --ext-diff
+        ddiff = -c diff.external=difftastic diff
 [color]
         diff = auto
         status = auto

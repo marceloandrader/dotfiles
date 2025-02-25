@@ -9,6 +9,7 @@ SETUVAR _fish_abbr_com:docker\x20compose\x20exec\x20php\x20composer
 SETUVAR _fish_abbr_d:df\x20\x2dhT\x20\x7c\x20grep\x20\x2dv\x20snap
 SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_dcb:docker\x20compose\x20exec\x20php\x20bash
+SETUVAR _fish_abbr_dcw:docker\x20compose\x20exec\x20www\x20bash
 SETUVAR _fish_abbr_down:/mnt/c/Users/marce/Downloads/
 SETUVAR _fish_abbr_ef:eslint\x20\x2d\x2dfix
 SETUVAR _fish_abbr_etf:ember\x2dtemplate\x2dlint\x20\x2d\x2dfix

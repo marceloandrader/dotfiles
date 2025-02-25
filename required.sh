@@ -3,7 +3,7 @@ sudo apt install arandr
 sudo apt install composer
 sudo apt install g++
 sudo apt install git-flow
-sudo apt install gnucash 
+sudo apt install gnucash
 sudo apt install jq
 sudo apt install make
 sudo apt install meld
@@ -21,6 +21,7 @@ sudo apt install php-xml
 sudo apt install php-zip
 sudo apt install pv
 sudo apt install python2
+sudo apt install sqlformat
 sudo apt install tmux
 sudo apt install visidata
 sudo apt install vlc
