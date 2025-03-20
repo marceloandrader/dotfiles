@@ -64,7 +64,7 @@
 [safe]
 	directory = /opt/tm2-api/vendor/igorsantos07/phalcon-queue-db
 [merge]
-	tool = nvimdiff
+	tool = meld
 [pull]
 	rebase = true
 [tag]

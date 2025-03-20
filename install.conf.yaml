@@ -11,6 +11,8 @@
     ~/.gitignore: git/gitignore
     ~/.gitconfig: git/gitconfig
     ~/.myclirc: mycli/myclirc
+    ~/.config/fish: fish
+    ~/.config/zed: zed
     # ~/.local/share/nvim: nvim
     # ~/.config/nvim/init.vim: nvim/init.vim
     # ~/.config/nvim: lazyvim
