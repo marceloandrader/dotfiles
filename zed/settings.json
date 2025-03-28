@@ -25,6 +25,10 @@
     },
     "version": "2"
   },
+  "tabs": {
+    "close_position": "left"
+  },
+  "enable_language_server": false,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -38,21 +42,23 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "format_on_save": "off",
   "languages": {
-    "CSS": {
-      "enable_language_server": false
-    },
-    "HTML": {
-      "language_server": {
-        "tailwindcss": {
-          "enabled": false
-        }
+      "CSS": {
+        "enable_language_server": false
+      },
+      "HTML": {
+        "enable_language_server": false
+      },
+      "JavaScript": {
+        "enable_language_server": false
+      },
+      "Handlebars": {
+        "enable_language_server": false
+      },
+      "PHP": {
+        "enable_language_server": false
+      },
+      "JSON": {
+        "enable_language_server": false
       }
-    },
-    "PHP": {
-      "enable_language_server": false
-    },
-    "JSON": {
-      "enable_language_server": false
     }
-  }
 }
