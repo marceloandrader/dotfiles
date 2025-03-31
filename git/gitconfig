@@ -69,3 +69,6 @@
 	rebase = true
 [tag]
 	sort = -authordate
+# Allow apply a set of merges on a rebase again and again
+[rerere]
+	enabled = true
