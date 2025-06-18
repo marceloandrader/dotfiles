@@ -3,3 +3,6 @@
 -- Add any additional options here
 vim.g.backupdir = "~/.local/share/nvim/_backup/"
 vim.g.directory = "~/.local/share/nvim/_temp/"
+
+vim.g.autoformat = false -- globally
+vim.b.autoformat = false -- buffer-local

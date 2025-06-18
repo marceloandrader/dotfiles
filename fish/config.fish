@@ -25,3 +25,7 @@ export PATH="/home/marcelo/.gem/bin:$PATH"
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [ -f /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish ]; and . /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish
 mise activate fish | source
+
+ssh-add ~/.ssh/new-logistico-key.pem &>/dev/null
+ssh-add ~/.ssh/smithcarson-prod.pem &>/dev/null
+ssh-add ~/.ssh/SmithCarson.pem &>/dev/null

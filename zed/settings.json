@@ -20,15 +20,15 @@
   },
   "assistant": {
     "default_model": {
-      "provider": "google",
-      "model": "gemini-2.0-flash"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
   "tabs": {
     "close_position": "left"
   },
-  "enable_language_server": false,
+  "enable_language_server": true,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -55,7 +55,7 @@
         "enable_language_server": false
       },
       "PHP": {
-        "enable_language_server": false
+        "language_servers": ["intelephense", "!phpactor"]
       },
       "JSON": {
         "enable_language_server": false
