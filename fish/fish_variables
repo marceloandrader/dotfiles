@@ -1,5 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export SSH_AGENT_PID:58090
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dZz6eaNi6FtdG/agent\x2e58089
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_all:\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_c:cd\x20\x7e/Code/
@@ -38,10 +40,10 @@ SETUVAR _fish_abbr_n1417:asdf\x20shell\x20nodejs\x2014\x2e17\x2e3
 SETUVAR _fish_abbr_n16:asdf\x20shell\x20nodejs\x2016\x2e20\x2e2
 SETUVAR _fish_abbr_n18:asdf\x20shell\x20nodejs\x2018\x2e16\x2e0
 SETUVAR _fish_abbr_n20:asdf\x20shell\x20nodejs\x2020\x2e11\x2e1
+SETUVAR _fish_abbr_rb:remote\x20Work/BusinessWorld/db\x2dlocal
 SETUVAR _fish_abbr_rep:remote\x20Work/SmithCarson/db\x2dendeavor\x2dprod
 SETUVAR _fish_abbr_res:remote\x20Work/SmithCarson/db\x2dendeavor\x2dstaging
 SETUVAR _fish_abbr_rl:remote\x20Work/SmithCarson/db\x2dconnection\x2dlocal
-SETUVAR _fish_abbr_rb:remote\x20Work/BusinessWorld/db\x2dlocal
 SETUVAR _fish_abbr_rp:remote\x20Work/SmithCarson/db\x2dconnection\x2dprod4
 SETUVAR _fish_abbr_rs:remote\x20Work/SmithCarson/db\x2dconnection\x2dstaging
 SETUVAR _fish_abbr_s:\x2e/vendor/bin/sail

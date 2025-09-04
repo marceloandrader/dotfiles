@@ -26,6 +26,18 @@ export PATH="/home/marcelo/.gem/bin:$PATH"
 [ -f /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish ]; and . /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish
 mise activate fish | source
 
+# Start SSH agent automatically
+if not ps -p $SSH_AGENT_PID &> /dev/null
+    eval (ssh-agent -c)
+    set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+    set -Ux SSH_AGENT_PID $SSH_AGENT_PID
+end
+
+# Add your SSH key (change path if needed)
+# ssh-add ~/.ssh/id_ed25519 2>/dev/null
 ssh-add ~/.ssh/new-logistico-key.pem &>/dev/null
 ssh-add ~/.ssh/smithcarson-prod.pem &>/dev/null
 ssh-add ~/.ssh/SmithCarson.pem &>/dev/null
+
+
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)

@@ -137,7 +137,7 @@ func_mycli() {
 }
 
 func_pgcli() {
-  command="PGPASSWORD=$(pass show $password_entry) pgcli -h $host -p $port -U $username $database"
+  command="PGPASSWORD='$(pass show $password_entry)' pgcli -h $host -p $port -U $username $database"
 
   if [ -n "$verbose" ]; then
     echo $command

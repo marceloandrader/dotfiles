@@ -1,0 +1,6 @@
+--max-columns=100
+--max-columns-preview
+
+--sort=path
+
+--smart-case

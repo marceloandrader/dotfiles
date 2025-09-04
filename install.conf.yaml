@@ -18,6 +18,7 @@
     # ~/.config/nvim: lazyvim
     # ~/.vimrc: nvim/init.vim
     ~/.config/starship.toml: starship/config.toml
+    ~/.ripgreprc: ripgrep/config
 
 # - create:
 #     - ~/.local/share/nvim/backup

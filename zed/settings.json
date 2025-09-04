@@ -19,8 +19,9 @@
     "dock": "bottom"
   },
   "assistant": {
+    "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "zed.dev",
+      "provider": "amazon-bedrock",
       "model": "claude-sonnet-4"
     },
     "version": "2"
@@ -60,5 +61,10 @@
       "JSON": {
         "enable_language_server": false
       }
+    },
+  "agent_servers": {
+    "gemini": {
+      "ignore_system_version": false
     }
+  }
 }
