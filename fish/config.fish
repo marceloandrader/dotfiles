@@ -38,6 +38,3 @@ end
 ssh-add ~/.ssh/new-logistico-key.pem &>/dev/null
 ssh-add ~/.ssh/smithcarson-prod.pem &>/dev/null
 ssh-add ~/.ssh/SmithCarson.pem &>/dev/null
-
-
-string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
