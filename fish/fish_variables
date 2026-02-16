@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export SSH_AGENT_PID:8501
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2d4a6SHnORlBCR/agent\x2e8500
+SETUVAR --export SSH_AGENT_PID:14184
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dgWyWXbYLCd0H/agent\x2e14180
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_all:\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_c:cd\x20\x7e/Code/
@@ -89,4 +89,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/marcelo/bin\x1e/home/marcelo/\x2edotfiles/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/marcelo/\x2easdf/shims\x1e/home/marcelo/\x2easdf/bin\x1e/home/marcelo/\x2ecargo/bin\x1e/home/marcelo/\x2efzf/bin
+SETUVAR fish_user_paths:/home/marcelo/\x2eopencode/bin\x1e/home/marcelo/bin\x1e/home/marcelo/\x2edotfiles/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/marcelo/\x2easdf/shims\x1e/home/marcelo/\x2easdf/bin\x1e/home/marcelo/\x2ecargo/bin\x1e/home/marcelo/\x2efzf/bin

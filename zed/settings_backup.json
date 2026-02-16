@@ -13,29 +13,30 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_assistant": false
   },
   "terminal": {
     "dock": "bottom"
   },
-  "agent": {
+  "assistant": {
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "amazon-bedrock",
       "model": "claude-sonnet-4"
     },
+    "version": "2"
   },
   "tabs": {
     "close_position": "left"
   },
-  "enable_language_server": false,
+  "enable_language_server": true,
   "features": {
     "edit_prediction_provider": "zed"
   },
   "ui_font_size": 18,
   "buffer_font_size": 18,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "One Dark"
   },

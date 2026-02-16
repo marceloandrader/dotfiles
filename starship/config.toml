@@ -17,7 +17,7 @@ $directory\
 """
 
 [directory]
-style = "bg:#33658A"
+style = "bg:#33658A fg:#ffffff"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"

@@ -111,7 +111,7 @@ set termguicolors
 " UI / Aesthetics
 """""""""""""""""""""""""
 " set background=dark
-colorscheme dracula
+colorscheme derek
 " let g:airline_theme='onedark'
 
 """""""""""""""""""""""""

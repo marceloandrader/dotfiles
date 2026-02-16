@@ -6,6 +6,7 @@ complete -c remote -a "(fdfind  . ~/.password-store/ | sed 's/\/home\/marcelo\/\
 eval (dircolors ~/.dir_colors/dircolors | head -n 1 | sed 's/^LS_COLORS=/set -x LS_COLORS /;s/;$//')
 export PATH="/home/marcelo/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
+export PATH="/home/marcelo/go/bin:$PATH"
 export PATH="/home/marcelo/.local/bin:$PATH"
 export PATH="/home/marcelo/bin/ddev:$PATH"
 export FLYCTL_INSTALL="/home/marcelo/.fly"
@@ -24,6 +25,7 @@ export PATH="/home/marcelo/.gem/bin:$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [ -f /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish ]; and . /home/marcelo/Code/toptal/SmithCarson/sc-source/scrape-bot/node_modules/tabtab/.completions/electron-forge.fish
+
 mise activate fish | source
 
 # Start SSH agent automatically
@@ -38,3 +40,6 @@ end
 ssh-add ~/.ssh/new-logistico-key.pem &>/dev/null
 ssh-add ~/.ssh/smithcarson-prod.pem &>/dev/null
 ssh-add ~/.ssh/SmithCarson.pem &>/dev/null
+
+# opencode
+fish_add_path /home/marcelo/.opencode/bin
