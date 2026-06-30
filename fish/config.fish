@@ -43,3 +43,7 @@ ssh-add ~/.ssh/SmithCarson.pem &>/dev/null
 
 # opencode
 fish_add_path /home/marcelo/.opencode/bin
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/marcelo/.local/bin" $PATH

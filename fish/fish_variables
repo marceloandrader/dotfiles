@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export SSH_AGENT_PID:14184
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dgWyWXbYLCd0H/agent\x2e14180
+SETUVAR --export SSH_AGENT_PID:22956
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2d6WFxupKcRK8Z/agent\x2e22955
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_all:\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_c:cd\x20\x7e/Code/
@@ -59,6 +59,8 @@ SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_vi2:nvim\x20\x2dO2\x20\x2dd
 SETUVAR _fish_abbr_viall:nvim\x20\x28git\x20status\x20\x2dsb\x7cgrep\x20\x2dv\x20\x22\x5e\x23\x22\x7cawk\x20\x27\x7bFS\x3d\x22\x20\x22\x7d\x7bprint\x20\x242\x7d\x27\x29
 SETUVAR _fish_abbr_xd:\x2dH\x20\x27Cookie\x3a\x20XDEBUG_SESSION\x3dPHPSTORM\x27
+SETUVAR _fish_abbr_za:zellij\x20attach
+SETUVAR _fish_abbr_zl:zellij\x20ls
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99

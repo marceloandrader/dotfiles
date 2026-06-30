@@ -7,7 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "proxy": "",
+  "project_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
   "edit_predictions": {
+    "provider": "zed",
+    "allow_data_collection": "no",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -19,10 +34,28 @@
     "dock": "bottom"
   },
   "agent": {
+    "default_profile": "ask",
+    "favorite_models": [
+      {
+        "provider": "amazon-bedrock",
+        "model": "claude-opus-4-6",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "amazon-bedrock",
+        "model": "claude-sonnet-4-6",
+        "enable_thinking": true,
+        "effort": "high"
+      }
+    ],
+    "dock": "left",
     "always_allow_tool_actions": true,
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "amazon-bedrock",
-      "model": "claude-sonnet-4"
+      "model": "claude-opus-4-6"
     },
   },
   "tabs": {
@@ -39,7 +72,7 @@
     "light": "One Light",
     "dark": "One Dark"
   },
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "FiraMono Nerd Font",
   "format_on_save": "off",
   "languages": {
       "CSS": {
@@ -62,8 +95,11 @@
       }
     },
   "agent_servers": {
-    "gemini": {
-      "ignore_system_version": false
+    "opencode": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
     }
   }
 }
