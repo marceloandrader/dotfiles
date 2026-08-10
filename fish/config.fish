@@ -29,14 +29,14 @@ export PATH="/home/marcelo/.gem/bin:$PATH"
 mise activate fish | source
 
 # Start SSH agent automatically
-if not ps -p $SSH_AGENT_PID &> /dev/null
+if not ps -p $SSH_AGENT_PID &>/dev/null
     eval (ssh-agent -c)
     set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
     set -Ux SSH_AGENT_PID $SSH_AGENT_PID
 end
 
 # Add your SSH key (change path if needed)
-# ssh-add ~/.ssh/id_ed25519 2>/dev/null
+SSH_ASKPASS_REQUIRE=force SSH_ASKPASS=~/.ssh/askpass-pass.sh ssh-add ~/.ssh/id_ed25519 &>/dev/null
 ssh-add ~/.ssh/new-logistico-key.pem &>/dev/null
 ssh-add ~/.ssh/smithcarson-prod.pem &>/dev/null
 ssh-add ~/.ssh/SmithCarson.pem &>/dev/null
