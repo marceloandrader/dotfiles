@@ -38,6 +38,9 @@ func_rdp() {
   if [ -n "$domain" ]; then
     CREDENTIALS="$CREDENTIALS /d:$domain"
   fi
+  if [ -n "$password_entry" ]; then
+    password="$(pass show $password_entry | head -n 1)"
+  fi
   if [ -n "$password" ]; then
     CREDENTIALS="$CREDENTIALS /p:\"$password\""
   fi
@@ -50,7 +53,7 @@ func_rdp() {
     FREERDP_PARAMS="$FREERDP_PARAMS /f"
   fi
 
-  command="xfreerdp $FREERDP_PARAMS /w:$FREERDP_WIDTH /h:$FREERDP_HEIGHT $CREDENTIALS /v:$host"
+  command="xfreerdp3 $FREERDP_PARAMS /w:$FREERDP_WIDTH /h:$FREERDP_HEIGHT $CREDENTIALS /v:$host"
   if [ -n "$verbose" ]; then
     echo $command
   fi
@@ -123,7 +126,7 @@ func_psql() {
 }
 
 func_mycli() {
-  command="mycli --local-infile=true -h $host -u $username -p '$(pass show $password_entry | head -n 1)' $database"
+  command="mycli --local-infile=true -h $host -u $username -p '$(pass show $password_entry | head -n 1)' --ssl-mode=off $database"
 
   if [ "$keepinterm" == "-e" ]; then
     command="termite -e \"$command\""

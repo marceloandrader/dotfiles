@@ -155,3 +155,6 @@ scrapes = " select count(1) from scrapes where assigned_on is null and assigned_
 # Special characters in passwords and other strings can be escaped with URL encoding.
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
+
+[client]
+ssl-mode=DISABLED
