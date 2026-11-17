@@ -97,7 +97,7 @@ func_ssh() {
 
 func_mysql() {
   sed -i "s/PASSWORD_R/$password/g" ~/.my.cnf
-  command="mysql -u $username -h $host --database=$database -AE"
+  command="mysql -u $username -h $host ${port:+-P $port} --database=$database -AE"
 
   if [ "$keepinterm" == "-e" ]; then
     command="termite -e \"$command\""
@@ -126,7 +126,7 @@ func_psql() {
 }
 
 func_mycli() {
-  command="mycli --local-infile=true -h $host -u $username -p '$(pass show $password_entry | head -n 1)' --ssl-mode=off $database"
+  command="mycli --local-infile=true -h $host ${port:+-P $port} -u $username -p '$(pass show $password_entry | head -n 1)' --ssl-mode=off $database"
 
   if [ "$keepinterm" == "-e" ]; then
     command="termite -e \"$command\""
